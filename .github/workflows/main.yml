@@ -1,0 +1,23 @@
+name: React App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: ls
+
+    #- name: Build React app
+      #run: npm run build
+
+    #- name: PM2 Process Start
+      #run: 
